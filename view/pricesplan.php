@@ -7,15 +7,17 @@
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Plans tarifaires</title>
+    <link rel="stylesheet" href="frontend/assets/sass/price.css">
+    <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>
     <main>
-        <img src="../img/MOVIEFLIX.png" alt="Logo du site MovieFlix">
+        <h1>MovieFlix</h1>
         <h2>Plus d'infos sur les plans tarifaires de notre site? Vous êtes au bon endroit!</h2>
         <ul>
-            <li>Regardez où vous voulez, sans publicités</li>
-            <li>Recommandations personnalisées</li>
-            <li>Changez ou annulez votre forfait à tout moment</li>
+            <li><img src="frontend/assets/img/bookmark.png" alt="List type" class="list-style-img"> Regardez où vous voulez, sans publicités</li>
+            <li><img src="frontend/assets/img/bookmark.png" alt="List type" class="list-style-img"> Recommandations personnalisées</li>
+            <li><img src="frontend/assets/img/bookmark.png" alt="List type" class="list-style-img"> Changez ou annulez votre forfait à tout moment</li>
         </ul>
 
         <table>
@@ -26,7 +28,7 @@
                 <th>Pack familial</th>
             </thead>
             <tbody>
-                <tr>
+                <tr class="line-btm">
                     <td>Tarif mensuel</td>
                     <td>8.99€</td>
                     <td>13.99€</td>
@@ -46,22 +48,27 @@
                 </tr>
                 <tr>
                     <td>MovieFlix sur smartphone, télé et tablette</td>
-                    <td class="check"></td>
-                    <td class="check"></td>
-                    <td class="check"></td>
+                    <td><img src="frontend/assets/img/check.png" alt="check" class="check"></td>
+                    <td><img src="frontend/assets/img/check.png" alt="check" class="check"></td>
+                    <td><img src="frontend/assets/img/check.png" alt="check" class="check"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="./register.php" class="btn-check">Je choisis celui-ci!</a></td>
-                    <td><a href="./register.php" class="btn-check">Je choisis celui-ci!</a></td>
-                    <td><a href="./register.php" class="btn-check">Je choisis celui-ci!</a></td>
+                    <td><button class="btn-check" onclick="location.href='register'">Je choisis celui-ci!</button></td>
+                    <td><button class="btn-check" onclick="location.href='register'">Je choisis celui-ci!</button></td>
+                    <td><button class="btn-check" onclick="location.href='register'">Je choisis celui-ci!</button></td>
                 </tr>
             </tbody>
         </table>
-        <p>* La résolution HD, full DH, ultra HD et HDR dépend de votre connexion internet</p>
+        <p class="warning">* La résolution HD, full DH, ultra HD et HDR dépend de votre connexion internet</p>
     </main>
-    <footer>
-        <p>Site réalisé par <a href="https://github.com/CalcagnoLoic" target="_blank">@CalcagnoLoic</a></p>
-    </footer>
+    <?php
+
+    use app\controller\Controller;
+
+    $footer = new Controller();
+    $footer->view('template/footer');
+
+    ?>
 </body>
 </html>

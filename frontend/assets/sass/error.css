@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+body {
+  font-family: Montserrat;
+  margin: 0 auto;
+  padding: 10%;
+}
+body h2, body p {
+  display: flex;
+  justify-content: center;
+}
+body p {
+  margin-bottom: 35px;
+}
+body div {
+  text-align: center;
+}
+body button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  margin: auto;
+  font-size: 18px;
+  font-family: Montserrat;
+  cursor: pointer;
+  transition: 1s;
+  transform: skewX(-15deg);
+  box-shadow: 6px 6px 0 black;
+}
+body button:hover {
+  transition: 0.5s;
+  font-size: 19px;
+  padding: 17px;
+  box-shadow: 10px 10px 0 rgb(87, 9, 3);
+}
+body img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 55px;
+}/*# sourceMappingURL=error.css.map */
