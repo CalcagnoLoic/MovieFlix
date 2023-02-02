@@ -7,8 +7,8 @@
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Connexion à MovieFlix</title>
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../frontend/assets/css/login.css">
+    <link rel="icon" href="../frontend/assets/img/logo.png">
 </head>
 <body>
     <main>
@@ -26,7 +26,7 @@
                 </div>
                 <a href="#">Besoin d'aide?</a>
             </div>
-            <p>Nouveau sur MovieFlix? <a href="register.html">Enregistrez vous!</a></p>
+            <p>Nouveau sur MovieFlix? <a href="./register.php">Enregistrez vous!</a></p>
         </div>
     </main>
     <footer>

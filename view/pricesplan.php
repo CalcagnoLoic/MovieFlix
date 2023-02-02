@@ -52,9 +52,9 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="./register.html" class="btn-check">Je choisis celui-ci!</a></td>
-                    <td><a href="./register.html" class="btn-check">Je choisis celui-ci!</a></td>
-                    <td><a href="./register.html" class="btn-check">Je choisis celui-ci!</a></td>
+                    <td><a href="./register.php" class="btn-check">Je choisis celui-ci!</a></td>
+                    <td><a href="./register.php" class="btn-check">Je choisis celui-ci!</a></td>
+                    <td><a href="./register.php" class="btn-check">Je choisis celui-ci!</a></td>
                 </tr>
             </tbody>
         </table>
