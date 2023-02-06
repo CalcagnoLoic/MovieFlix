@@ -28,27 +28,56 @@
         </nav>
     </header>
     <main>
-        <div class="main">
-            <img src="frontend/assets/img/bg-image.jpg" alt="poster film">
-        </div>
         <div class="site">
-            <div class="categorie">
-                <h2>Les films les mieux notés</h2>
+            <div class="categorie-action">
+                <h2>Action</h2>
+                <div id="slider-action"></div>
+                <div class="chevron">
+                    <img src="frontend/assets/img/chevron-gauche.png" alt="chevron gauche" id="g-action" class="btn">
+                    <img src="frontend/assets/img/chevron-droit.png" alt="chevron droit" id="d-action" class="btn">
+                </div>
+                
             </div>
-            <div class="categorie">
-                <h2>Les films à l'affiche</h2>
+            <div class="categorie-aventure">
+                <h2>Aventure</h2>
+                <div id="slider-aventure"></div>
+                <div class="chevron">
+                    <img src="frontend/assets/img/chevron-gauche.png" alt="chevron gauche" id="g-action" class="btn">
+                    <img src="frontend/assets/img/chevron-droit.png" alt="chevron droit" id="d-action" class="btn">
+                
+                </div>
             </div>
-            <div class="categorie">
-                <h2>Les films populaires</h2>
+            <div class="categorie-comedie">
+                <h2>Comédie</h2>
+                <div id="slider-comedie"></div>
+                <div class="chevron">
+                    <img src="frontend/assets/img/chevron-gauche.png" alt="chevron gauche" id="g-action" class="btn">
+                    <img src="frontend/assets/img/chevron-droit.png" alt="chevron droit" id="d-action" class="btn">
+                </div>
             </div>
-            <div class="categorie">
-                <h2>Les émission télévisées les mieux notées</h2>
+            <div class="categorie-drame">
+                <h2>Drame</h2>
+                <div id="slider-drame"></div>
+                <div class="chevron">
+                    <img src="frontend/assets/img/chevron-gauche.png" alt="chevron gauche" id="g-action" class="btn">
+                    <img src="frontend/assets/img/chevron-droit.png" alt="chevron droit" id="d-action" class="btn">
+                </div>
             </div>
-            <div class="categorie">
-                <h2>Les émissions télévisées en cours de diffusion</h2>
+            <div class="categorie-fantastique">
+                <h2>Fantastique</h2>
+                <div id="slider-fantastique"></div>
+                <div class="chevron">
+                    <img src="frontend/assets/img/chevron-gauche.png" alt="chevron gauche" id="g-action" class="btn">
+                    <img src="frontend/assets/img/chevron-droit.png" alt="chevron droit" id="d-action" class="btn">
+                </div>
             </div>
-            <div class="categorie">
-                <h2>Les émissions télévisées populaires</h2>
+            <div class="categorie-horreur">
+                <h2>Horreur</h2>
+                <div id="slider-horreur"></div>
+                <div class="chevron">
+                    <img src="frontend/assets/img/chevron-gauche.png" alt="chevron gauche" id="g-action" class="btn">
+                    <img src="frontend/assets/img/chevron-droit.png" alt="chevron droit" id="d-action" class="btn">
+                </div>
             </div>
         </div>
     </main>
@@ -60,5 +89,12 @@
     $footer->view('template/footer');
 
     ?>
+    <script src="frontend/assets/js/apiKey.js"></script>
+    <script src="frontend/assets/js/carrouselAction.js"></script>
+    <script src="frontend/assets/js/carrouselAventure.js"></script>
+    <script src="frontend/assets/js/carrouselComedie.js"></script>
+    <script src="frontend/assets/js/carrouselDrame.js"></script>
+    <script src="frontend/assets/js/carrouselFantastique.js"></script>
+    <script src="frontend/assets/js/carrouselHorreur.js"></script>
 </body>
 </html>
