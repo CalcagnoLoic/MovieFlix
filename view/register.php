@@ -7,12 +7,14 @@
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>S'enregistrer à MovieFlix</title>
+    <link rel="stylesheet" href="frontend/assets/sass/register.css">
+    <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>
     <main>
         <div class="container">
-            <img src="../img/MOVIEFLIX.png" alt="Logo du site MovieFlix">
-            <h1>S'enregistrer</h1>
+            <h1>MovieFlix</h1>
+            <h2>S'enregistrer</h2>
             <form>
                 <div class="form1">
                     <select name="" id="">
@@ -21,7 +23,7 @@
                         <option value="standard">Pack standard</option>
                         <option value="familial">Pack familial</option>
                     </select>
-                    <a href="./prices_plan.html">Plus d'infos sur les plans tarifaires?</a>
+                    <a href="prices">Plus d'infos sur les plans tarifaires?</a>
                 </div>
                 <div class="form2">
                     <input type="text" placeholder="Nom de famille">
@@ -34,12 +36,15 @@
                     <input type="password" placeholder="Votre mot de passe">
                     <input type="password" placeholder="Confirmez votre mot de passe">
                 </div>
-                <input type="button" value="S'enregistrer">
+                <input type="button" class="btn" value="S'enregistrer">
             </form>
         </div>
     </main>
-    <footer>
-        <p>Site réalisé par <a href="https://github.com/CalcagnoLoic" target="_blank">@CalcagnoLoic</a></p>
-    </footer>
+    <?php
+        use app\controller\Controller;
+
+        $footer = new controller;
+        $footer->view('template/footer');
+    ?>
 </body>
 </html>

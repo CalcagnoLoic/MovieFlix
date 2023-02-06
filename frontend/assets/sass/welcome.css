@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@font-face {
+  font-family: JacquesFrançoisShadow;
+  src: url(../fonts/Jacques_Francois_Shadow/JacquesFrancoisShadow-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+body {
+  margin: 0 auto;
+  font-family: Montserrat;
+  background-image: url(../img/bg-login.png);
+}
+body p, body h2 {
+  text-align: center;
+  color: white;
+}
+body nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+body nav .group1 {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+body nav .group1 h1 {
+  color: rgb(250, 55, 29);
+  font-family: JacquesFrançoisShadow;
+  font-size: 45px;
+}
+body nav .group1 img {
+  width: 20%;
+}
+body nav .group2 {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body nav .group2 button {
+  background-color: rgb(250, 55, 29);
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  font-family: Montserrat;
+  box-shadow: 2px 2px 0 white;
+  cursor: pointer;
+  transition: 1s;
+}
+body nav .group2 button:hover {
+  transition: 1.5s;
+  padding: 16px;
+  font-size: 19px;
+}
+body .welcome {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+body .welcome h2 {
+  font-size: 25px;
+}
+body .welcome .img-welcome {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 65%;
+}
+body .welcome .main-title {
+  font-size: 30px;
+}
+body footer {
+  background-color: rgba(250, 55, 29, 0.9);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+body footer a {
+  color: white;
+  text-decoration: none;
+}
+body footer .ft-img {
+  width: 8%;
+}/*# sourceMappingURL=welcome.css.map */

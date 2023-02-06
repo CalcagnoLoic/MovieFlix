@@ -7,8 +7,8 @@
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Connexion à MovieFlix</title>
-    <link rel="stylesheet" href="../frontend/assets/css/login.css">
-    <link rel="icon" href="../frontend/assets/img/logo.png">
+    <link rel="stylesheet" href="frontend/assets/sass/login.css">
+    <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>
     <main>
@@ -18,7 +18,7 @@
             <form>
                 <input type="text" placeholder="Email ou pseudo">
                 <input type="text" placeholder="Mot de passe">
-                <button type="submit">Connexion</button>
+                <button type="button">Connexion</button>
             </form>
             <div class="info">
                 <div>
@@ -26,11 +26,14 @@
                 </div>
                 <a href="#">Besoin d'aide?</a>
             </div>
-            <p>Nouveau sur MovieFlix? <a href="./register.php">Enregistrez vous!</a></p>
+            <p>Nouveau sur MovieFlix? <a href="register">Enregistrez vous!</a></p>
         </div>
     </main>
-    <footer>
-        <p>Site réalisé par <a href="https://github.com/CalcagnoLoic" target="_blank">@CalcagnoLoic</a></p>
-    </footer>
+    <?php
+        use app\controller\Controller;
+
+        $footer = new controller;
+        $footer->view('template/footer');
+    ?>
 </body>
 </html>

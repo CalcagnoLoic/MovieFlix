@@ -10,7 +10,7 @@
 body {
   background-image: url(../img/bg-login.png);
   font-family: Montserrat;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .container {
@@ -30,7 +30,6 @@ body {
   color: red;
   font-size: 50px;
   letter-spacing: 2px;
-  text-transform: uppercase;
   word-break: break-all;
 }
 .container h2 {
@@ -40,6 +39,7 @@ body {
 .container form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .container input {
   background-color: #2b2b2b;
@@ -59,9 +59,9 @@ body {
   width: 30%;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin: auto;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .container .info {
   display: flex;
@@ -109,4 +109,7 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+footer .ft-img {
+  width: 8%;
 }/*# sourceMappingURL=login.css.map */
