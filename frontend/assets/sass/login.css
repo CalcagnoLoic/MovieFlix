@@ -59,7 +59,7 @@ body {
   width: 30%;
   cursor: pointer;
   display: block;
-  margin: 25 auto;
+  margin: auto;
   font-size: 20px;
   margin-bottom: 25px;
 }
@@ -109,4 +109,7 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+footer .ft-img {
+  width: 8%;
 }/*# sourceMappingURL=login.css.map */

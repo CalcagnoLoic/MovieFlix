@@ -24,12 +24,14 @@
         </nav>
     </header>
     <main>
-        <h2 class="main-title">Bienvenue sur MovieFlix</h2>
-        <h2>Envie d'un film d'action avec Tom Cruise ou simplement vous retrouvez face à face avec un Tyrannosaure de Spielberg?</h2>
-        <h2>Vous êtes au bon endroit!</h2>
-        <p>Grâce à notre catalogue diversifié, vous avez accès à plus de 10.000 films possibles.</p>
-        <p>Notre catalogue propose une multitude de catégories allant du drame historique aux films d'horreurs en passant par les comédies familiales.</p>
-        <img class="img-welcome" src="frontend/assets/img/welcome-removebg-preview.png" alt="Carrousel film">
+        <div class="welcome">
+            <h2 class="main-title">Bienvenue sur MovieFlix</h2>
+            <h2>Envie d'un film d'action avec Tom Cruise ou simplement vous retrouver face à face avec un Tyrannosaure de Spielberg?</h2>
+            <h2>Vous êtes au bon endroit!</h2>
+            <p>Grâce à notre catalogue diversifié, vous avez accès à plus de 10.000 films possibles ainsi que des émissions télévisées.</p>
+            <p>Notre catalogue propose une multitude de catégories allant du drame historique aux films d'horreurs en passant par les comédies familiales.</p>
+            <img class="img-welcome" src="frontend/assets/img/welcome-removebg-preview.png" alt="Carrousel film">
+        </div>
     </main>
     <?php
     use app\controller\Controller;
