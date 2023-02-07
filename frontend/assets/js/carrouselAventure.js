@@ -24,7 +24,7 @@ let get_data_aventure = (arr) => {
         title_aventure.push(element.title);
         synopsis_aventure.push(element.overview);
         rate_aventure.push(element.vote_average);
-        image_aventure.push(element.posterpath);
+        image_aventure.push(element.poster_path);
     });
 }
 
@@ -38,4 +38,68 @@ data_fetch_film_aventure()
     .then(res => {
         get_data_aventure(res)
         
+        /**
+         * Manipulation du DOM
+         */
+        let container_aventure = document.getElementById("slider-aventure");
+        let g_aventure = document.getElementById("g-aventure");
+        let d_aventure = document.getElementById("d-aventure");
+
+        /**
+         * Initialisation du carrousel
+         */
+        let container_length = title_aventure.length;
+        let position = 0;
+        container_aventure.style.width=(container_length*245)+"px";
+
+        /**
+         * Création des balises img
+         */
+        for (let i = 0; i < container_length; i++) {
+            let img_aventure = document.createElement("img");
+            img_aventure.src = image_path_aventure + image_aventure[i];
+            img_aventure.alt = "Poster du film";
+            img_aventure.style.width=245+"px";
+            img_aventure.style.height=281+"px";
+            img_aventure.className = "photo";
+            container_aventure.appendChild(img_aventure);
+        }
+        
+        /**
+         * Comportement des flèches
+         */
+        let comportementFleche = () => {
+            if(position == 0) {
+                d_aventure.style.visibility="hidden";
+            } else {
+                d_aventure.style.visibility="visible";
+            }
+            if(position > -19) {
+                g_aventure.style.visibility="visible";
+            } else {
+                g_aventure.style.visibility="hidden";
+            }
+        }
+
+        comportementFleche();
+
+        g_aventure.onclick = () => {
+            if (position > -19) {
+                position--;
+                container_aventure.style.transform="translate("+ position*245 +"px)";
+                container_aventure.style.transition="all 0.3s ease";
+            }
+
+            comportementFleche();
+        }
+
+        d_aventure.onclick = () => {
+            if (position < 0) {
+                position++;
+                container_aventure.style.transform="translate(" + position*245 + "px)";
+                container_aventure.style.transition="all 0.3s ease";
+            }
+
+            comportementFleche();
+        }
     })

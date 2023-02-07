@@ -56,35 +56,36 @@ body {
         .site {
             padding: 15px;
             margin: 15px;
-            .categorie-action, .categorie-drame, .categorie-aventure, .categorie-horreur, .categorie-fantastique, .categorie-comedie {
+            .categorie-action, .categorie-drame, .categorie-aventure, .categorie-horreur, .categorie-fantastique, .categorie-comedie, .categorie-policier, .categorie-docu, .categorie-mystere, .categorie-scifi, .categorie-thriller {
+                overflow: hidden;
                 h2 {
                     color: white;
                 }
-                #g-action, #g-aventure, #g-horreur, #g-drame, #g-comedie, #g-fantastique {
+                #g-action, #g-aventure, #g-horreur, #g-drame, #g-comedie, #g-fantastique, #g-policier, #g-docu, #g-mystere, #g-scifi, #g-thriller {
                     width: 3%;
                     &:hover {
                         cursor: pointer;
                         transform:scale(1.1);
                     }
                 }
-                #d-action, #d-aventure, #d-horreur, #d-drame, #d-comedie, #d-fantastique {
+                #d-action, #d-aventure, #d-horreur, #d-drame, #d-comedie, #d-fantastique, #d-policier, #d-docu, #d-mystere, #d-scifi, #d-thriller {
                     width: 3%;
                     &:hover {
                         cursor: pointer;
                         transform:scale(1.1);
                     }
-                }
-                .categorie-action {
-                    overflow: hidden;
                 }
                 .chevron {
                     display: flex;
                     justify-content: center;
                 }
                 .photo {
-                    column-gap: 5px;
                     border-radius: 15px;
-                    flex-direction: column;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        transition: all 0.5s ease;
+                    }
                 }
             }
         }
