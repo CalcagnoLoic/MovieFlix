@@ -38,9 +38,7 @@ let get_data_action = (arr) => {
 data_fetch_film_action()
     .then(res => {
         get_data_action(res)
-
-        console.log(image_action);
-
+        
         /**
          * Récupération des éléments du DOM
          */
