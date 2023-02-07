@@ -93,3 +93,53 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    body {
+        nav {
+            padding: 1%;
+            .group1 {
+                column-gap: 5px;
+                h1 {
+                    display: none;
+                }
+                img {
+                    width: 30%;
+                }
+            }
+            .group2 {
+                column-gap: 10px;
+                button {
+                    padding: 13%x;
+                    font-size: 13px;
+                    &:hover {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .welcome {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 25px;
+            h2 {
+                font-size: 20px;
+            }
+            .img-welcome {
+                width: 75%;
+            }
+            .main-title {
+                font-size: 30px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+        footer {
+            font-size: 15px;
+            .ft-img {
+                width: 20%;
+            }
+        }
+    }
+}
