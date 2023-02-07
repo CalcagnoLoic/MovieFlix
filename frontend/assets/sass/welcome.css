@@ -93,4 +93,55 @@ body footer a {
 }
 body footer .ft-img {
   width: 8%;
+}
+
+@media (max-width: 600px) {
+  body nav {
+    padding: 1%;
+  }
+  body nav .group1 {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  body nav .group1 h1 {
+    display: none;
+  }
+  body nav .group1 img {
+    width: 30%;
+  }
+  body nav .group2 {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  body nav .group2 button {
+    padding: 13% x;
+    font-size: 13px;
+  }
+  body nav .group2 button:hover {
+    font-size: 13px;
+  }
+  body .welcome {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  body .welcome h2 {
+    font-size: 20px;
+  }
+  body .welcome .img-welcome {
+    width: 75%;
+  }
+  body .welcome .main-title {
+    font-size: 30px;
+  }
+  body .welcome p {
+    font-size: 15px;
+  }
+  body footer {
+    font-size: 15px;
+  }
+  body footer .ft-img {
+    width: 20%;
+  }
 }/*# sourceMappingURL=welcome.css.map */

@@ -109,3 +109,20 @@ footer {
         width: 8%;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 75%;
+    }
+    footer {
+        font-size: 15px;
+        .ft-img {
+            width: 13%;
+        }
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px){
+    .container {
+        width: 75%;
+    }
+}

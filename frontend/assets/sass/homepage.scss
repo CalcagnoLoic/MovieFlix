@@ -29,6 +29,9 @@ body {
                 width: 48px;
                 height: 48px;
             }
+            .img-responsive {
+                display: none;
+            }
         }
         .searchbar {
             display: flex;
@@ -44,8 +47,6 @@ body {
                 border: none;
                 background: #ddd;
                 font-size: 17px;
-                margin-top: 6px;
-                margin-right: 6px;
                 &:hover {
                     background-color: #ccc;
                 }
@@ -102,6 +103,45 @@ body {
         }
         .ft-img {
             width: 8%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        nav {
+            padding: 5%;
+            .block1 {
+                h1 {
+                    display: none;
+                }
+                .menu {
+                    width: 60px;
+                    height: 60px;
+                }
+                .img-responsive {
+                    display: block;
+                    width: 25%;
+                }
+            }
+        }
+        main {
+            .site {
+                .categorie-action, .categorie-drame, .categorie-aventure, .categorie-horreur, .categorie-fantastique, .categorie-comedie, .categorie-policier, .categorie-docu, .categorie-mystere, .categorie-scifi, .categorie-thriller {
+                    #g-action, #g-aventure, #g-horreur, #g-drame, #g-comedie, #g-fantastique, #g-policier, #g-docu, #g-mystere, #g-scifi, #g-thriller {
+                        width: 7%;
+                    }
+                    #d-action, #d-aventure, #d-horreur, #d-drame, #d-comedie, #d-fantastique, #d-policier, #d-docu, #d-mystere, #d-scifi, #d-thriller {
+                        width: 7%;
+                    }
+                }
+            }
+        }
+        footer {
+            font-size: 15px;
+            .ft-img {
+                width: 20%;
+            }
         }
     }
 }

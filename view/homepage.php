@@ -17,6 +17,7 @@
             <div class="block1">
                 <img src="frontend/assets/img/iconmonstr-menu-circle-lined-240.png" alt="Menu" class="menu">
                 <h1>MovieFlix</h1>
+                <img src="frontend/assets/img/logo.png" alt="Logo responsive" class="img-responsive">
             </div>
             <div class="searchbar">
                 <form>

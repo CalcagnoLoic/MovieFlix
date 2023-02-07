@@ -111,4 +111,62 @@ footer a {
 }
 footer .ft-img {
   width: 8%;
+}
+
+@media (max-width: 600px) {
+  body main {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  body h1 {
+    font-size: 40px;
+  }
+  body h2 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+  }
+  body ul li {
+    font-size: 14px;
+  }
+  body ul li .list-style-img {
+    width: 13px;
+  }
+  body .table-responsive {
+    overflow-x: scroll;
+  }
+  body table thead th {
+    border: 3px solid white;
+  }
+  body table thead th:not(:first-child) {
+    padding: 7px;
+    font-size: 17px;
+  }
+  body table tbody tr {
+    border-bottom: 3px solid rgb(250, 55, 29);
+  }
+  body table tbody tr:hover {
+    background-color: rgb(250, 242, 242);
+  }
+  body table tbody tr td {
+    font-size: 13px;
+  }
+  body table tbody tr td:first-child {
+    font-size: 15px;
+  }
+  body table tbody tr td .check {
+    width: 15px;
+  }
+  body table tbody tr td .btn-check {
+    font-size: 15px;
+    padding: 7px;
+  }
+  body .warning {
+    word-wrap: break-word;
+  }
+  footer {
+    font-size: 15px;
+  }
+  footer .ft-img {
+    width: 13%;
+  }
 }/*# sourceMappingURL=price.css.map */
