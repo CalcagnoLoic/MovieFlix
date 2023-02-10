@@ -52,6 +52,7 @@ body nav .group2 button {
   box-shadow: 2px 2px 0 white;
   cursor: pointer;
   transition: 1s;
+  font-size: 17px;
 }
 body nav .group2 button:hover {
   transition: 1.5s;
@@ -126,17 +127,8 @@ body footer .ft-img {
     margin-right: auto;
     margin-bottom: 25px;
   }
-  body .welcome h2 {
-    font-size: 20px;
-  }
   body .welcome .img-welcome {
     width: 75%;
-  }
-  body .welcome .main-title {
-    font-size: 30px;
-  }
-  body .welcome p {
-    font-size: 15px;
   }
   body footer {
     font-size: 15px;

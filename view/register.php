@@ -15,9 +15,9 @@
         <div class="container">
             <h1>MovieFlix</h1>
             <h2>S'enregistrer</h2>
-            <form>
+            <form action="#" id="form" method="post">
                 <div class="form1">
-                    <select name="" id="">
+                    <select required>
                         <option value="">--Veuillez choisir une option--</option>
                         <option value="essentiel">Pack essentiel</option>
                         <option value="standard">Pack standard</option>
@@ -26,17 +26,34 @@
                     <a href="prices">Plus d'infos sur les plans tarifaires?</a>
                 </div>
                 <div class="form2">
-                    <input type="text" placeholder="Nom de famille">
-                    <input type="text" placeholder="Prénom">
+                    <div class="input-control">
+                        <div class="error"></div>
+                        <input type="text" placeholder="Nom de famille" class="input" id="nom" required>
+                        <input type="text" placeholder="Prénom" class="input" id="prenom" required>
+                    </div>
+                    
                 </div>
                 <div class="form3">
-                    <input type="text" placeholder="Adresse complète">
-                    <input type="email" placeholder="Votre adresse email">
-                    <input type="email" placeholder="Confirmez votre adresse email">
-                    <input type="password" placeholder="Votre mot de passe">
-                    <input type="password" placeholder="Confirmez votre mot de passe">
+                    <div class="input-control">
+                        <div class="error"></div>
+                        <input type="text" placeholder="Adresse complète" class="input" id="address" required>
+                    </div>
+                    
+                    <div class="input-control">
+                        <div class="error"></div>
+                        <input type="email" placeholder="Votre adresse email" id="email" class="input" required>
+                    </div>
+
+                    <div class="input-control">
+                        <div class="error"></div>
+                        <input type="password" placeholder="Votre mot de passe" class="input" id="password" required>
+                    </div>
+                    <div class="input-control">
+                        <div class="error"></div>
+                        <input type="password" placeholder="Confirmez votre mot de passe" class="input" id="password2" required>
+                    </div>
                 </div>
-                <input type="button" class="btn" value="S'enregistrer">
+                <input type="submit"class="btn" value="S'enregistrer">
             </form>
         </div>
     </main>
@@ -46,5 +63,7 @@
         $footer = new controller;
         $footer->view('template/footer');
     ?>
+
+    <script src="frontend/assets/js/matchingInput.js"></script>
 </body>
 </html>

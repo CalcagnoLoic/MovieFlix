@@ -16,9 +16,9 @@
             <h1>MovieFlix</h1>
             <h2>Connexion à votre compte</h2>
             <form>
-                <input type="text" placeholder="Email ou pseudo">
-                <input type="text" placeholder="Mot de passe">
-                <button type="button">Connexion</button>
+                <input type="text" placeholder="Email ou pseudo" required class="input">
+                <input type="text" placeholder="Mot de passe" required class="input">
+                <input type="submit" value="Se connecter" class="btn">
             </form>
             <div class="info">
                 <div>
