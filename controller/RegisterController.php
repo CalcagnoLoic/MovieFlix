@@ -9,28 +9,27 @@ class RegisterController extends Controller
 {
     public function newUser() 
     {
-        if(!empty($_POST['email']) && !empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['address']) && !empty($_POST['prices']) && !empty($_POST['password'])) 
+        if(!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['username']) && !empty($_POST['address']) && !empty($_POST['prices']) && !empty($_POST['password'])) 
         {
             $email = $_POST['email'];
-            $firstname = $_POST['firstname'];
-            $lastname = $_POST['lastname'];
+            $name = $_POST['name'];
+            $username = $_POST['username'];
             $address = $_POST['address'];
             $prices = $_POST['prices'];
             $password = $_POST['password'];
 
             //Sanitization 
             $emailFilter = filter_var($email, FILTER_SANITIZE_EMAIL);
-            $firstnameFilter = htmlspecialchars($firstname);
-            $lastnameFilter = htmlspecialchars($lastname);
+            $nameFilter = htmlspecialchars($name);
+            $usernameFilter = htmlspecialchars($username);
             $addressFilter = htmlspecialchars($address);
             $passwordFilter = htmlspecialchars($password);
             $passwordHash = password_hash($passwordFilter, PASSWORD_DEFAULT);
 
             $addNewUser = new RegisterModel();
-            $addNewUser->addUser($emailFilter, $firstnameFilter, $lastnameFilter, $addressFilter, $prices, $passwordHash);  
+            $addNewUser->addUser($emailFilter, $nameFilter, $addressFilter, $prices, $passwordHash, $usernameFilter);  
             
-            return $this->view('loginform');
-            
+            header('Location: http://localhost/MovieFlix/login');
         } else {
             return $this->view('register');
         }

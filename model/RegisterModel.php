@@ -13,11 +13,11 @@ class RegisterModel
         return $this->db = new Database();        
     }
 
-    public function addUser($email, $firstname, $lastname, $address, $prices, $password) 
+    public function addUser($email, $name, $address, $prices, $password, $username) 
     {
         $query = 
-            "INSERT INTO register(email, firstname, lastname, address, prices, password)
-            VALUES('$email', '$firstname', '$lastname', '$address', '$prices', '$password')";
+            "INSERT INTO register(email, name, address, prices, password, username)
+            VALUES('$email', '$name', '$address', '$prices', '$password', '$username')";
         
         $res = $this->db->getInstance()->prepare($query);
         $res->execute();

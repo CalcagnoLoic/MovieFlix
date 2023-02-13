@@ -15,9 +15,10 @@
         <div class="container">
             <h1>MovieFlix</h1>
             <h2>Connexion à votre compte</h2>
-            <form>
-                <input type="text" placeholder="Email" required class="input">
-                <input type="text" placeholder="Mot de passe" required class="input">
+            <form method="post" action="">
+                <input type="test" placeholder="Pseudo" required class="input" name='username'>
+                <input type="email" placeholder="Email" required class="input" name='email'>
+                <input type="password" placeholder="Mot de passe"  class="input" name="password">
                 <input type="submit" value="Se connecter" class="btn">
             </form>
             <div class="info">
