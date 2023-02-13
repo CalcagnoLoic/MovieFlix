@@ -15,9 +15,9 @@
         <div class="container">
             <h1>MovieFlix</h1>
             <h2>S'enregistrer</h2>
-            <form action="#" id="form" method="post">
+            <form method="post" action="">
                 <div class="form1">
-                    <select required>
+                    <select required name="prices">
                         <option value="">--Veuillez choisir une option--</option>
                         <option value="essentiel">Pack essentiel</option>
                         <option value="standard">Pack standard</option>
@@ -28,35 +28,35 @@
                 <div class="form2">
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="text" placeholder="Nom de famille" class="input" id="nom" required>
-                        <input type="text" placeholder="Prénom" class="input" id="prenom" required>
+                        <input type="text" placeholder="Nom de famille" class="input" id="nom" required name="lastname">
+                        <input type="text" placeholder="Prénom" class="input" id="prenom" required name="firstname">
                     </div>
-                    
                 </div>
                 <div class="form3">
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="text" placeholder="Adresse complète" class="input" id="address" required>
+                        <input type="text" placeholder="Adresse complète" class="input" id="address" required name="address">
                     </div>
                     
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="email" placeholder="Votre adresse email" id="email" class="input" required>
+                        <input type="email" placeholder="Votre adresse email" id="email" class="input" required name="email">
                     </div>
 
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="password" placeholder="Votre mot de passe" class="input" id="password" required>
+                        <input type="password" placeholder="Votre mot de passe" class="input" id="password"  name="password">
                     </div>
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="password" placeholder="Confirmez votre mot de passe" class="input" id="password2" required>
+                        <input type="password" placeholder="Confirmez votre mot de passe" class="input" id="password2" >
                     </div>
                 </div>
-                <input type="submit"class="btn" value="S'enregistrer">
+                <input type="submit" class="btn" value="S'enregistrer">
             </form>
         </div>
     </main>
+
     <?php
         use app\controller\Controller;
 

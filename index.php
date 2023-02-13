@@ -11,7 +11,7 @@ use app\controller\LoginForm;
 use app\controller\Error;
 use app\controller\HomePage;
 use app\controller\PricesPlan;
-use app\controller\Register;
+use app\controller\RegisterController;
 
 switch ($url) {
     case '/MovieFlix/':
@@ -25,8 +25,8 @@ switch ($url) {
         break;
 
     case '/MovieFlix/register':
-        $register = new Register();
-        $register->registerForm();
+        $register = new RegisterController();
+        $register->newUser();
         break;
 
     case '/MovieFlix/homepage':
