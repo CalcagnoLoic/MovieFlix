@@ -28,8 +28,8 @@
                 <div class="form2">
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="text" placeholder="Nom de famille" class="input" id="nom" required name="lastname">
-                        <input type="text" placeholder="Prénom" class="input" id="prenom" required name="firstname">
+                        <input type="text" placeholder="Nom et prénom" class="input" id="nom" required name="name">
+                        <input type="text" placeholder="Pseudo" class="input" id="prenom" required name="username">
                     </div>
                 </div>
                 <div class="form3">
@@ -45,11 +45,11 @@
 
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="password" placeholder="Votre mot de passe" class="input" id="password"  name="password">
+                        <input type="password" placeholder="Votre mot de passe" class="input" id="password" required name="password">
                     </div>
                     <div class="input-control">
                         <div class="error"></div>
-                        <input type="password" placeholder="Confirmez votre mot de passe" class="input" id="password2" >
+                        <input type="password" placeholder="Confirmez votre mot de passe" class="input" id="password2" required>
                     </div>
                 </div>
                 <input type="submit" class="btn" value="S'enregistrer">

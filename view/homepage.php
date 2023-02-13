@@ -29,6 +29,14 @@
         </nav>
     </header>
     <main>
+        <h1 style="color: white;">Bienvenue,  <?php 
+        if (!empty($_SESSION['Customer'])) {
+            echo $_SESSION['Customer'];
+        } else {
+            echo "erreur";
+        }
+        ?> !
+        </h1>
         <div class="site">
             <div class="categorie-action">
                 <h2>Action</h2>
