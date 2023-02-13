@@ -8,8 +8,12 @@ https://www.figma.com/file/hzoJoSl1dqi270I5WF2lnO/MovieFlix?node-id=0%3A1&t=BaC6
 
 - [x] Squelette HTML 
 
-- [ ] Design CSS
+- [x] Design CSS
 
-- [ ] Rendre responsive la page
+- [x] Rendre responsive la page
 
 - [ ] Ajout du javascript
+
+- [ ] Connectivité php
+
+- [ ] Phase de testing
