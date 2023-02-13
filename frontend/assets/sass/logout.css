@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: JacquesFrançoisShadow;
+  src: url(../fonts/Jacques_Francois_Shadow/JacquesFrancoisShadow-Regular.ttf);
+}
+body {
+  background-image: url(../img/bg-login.png);
+  font-family: Montserrat;
+  margin: 0 auto;
+}
+body main div {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 85px 45px;
+}
+body main div h1 {
+  font-family: JacquesFrançoisShadow;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(250, 55, 29);
+  word-wrap: break-word;
+}
+body main div img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+body main div button {
+  display: flex;
+  margin-top: 40px;
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+  font-family: Montserrat;
+  cursor: pointer;
+  transition: 1s;
+  transform: skewX(-15deg);
+  box-shadow: 6px 6px 0 black;
+}
+body main div button:hover {
+  transition: 0.5s;
+  font-size: 19px;
+  padding: 17px;
+  box-shadow: 10px 10px 0 rgb(87, 9, 3);
+}
+body footer {
+  background-color: rgba(250, 55, 29, 0.9);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+body footer a {
+  color: white;
+  text-decoration: none;
+}
+body footer .ft-img {
+  width: 8%;
+}
+
+@media (max-width: 600px) {
+  body main div img {
+    width: 75%;
+  }
+  body footer {
+    font-size: 15px;
+  }
+  body footer .ft-img {
+    width: 20%;
+  }
+}/*# sourceMappingURL=logout.css.map */

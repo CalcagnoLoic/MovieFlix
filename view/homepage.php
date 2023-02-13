@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,29 +19,34 @@
     <header>
         <nav>
             <div class="block1">
-                <img src="frontend/assets/img/iconmonstr-menu-circle-lined-240.png" alt="Menu" class="menu">
+                
                 <h1>MovieFlix</h1>
                 <img src="frontend/assets/img/logo.png" alt="Logo responsive" class="img-responsive">
             </div>
-            <div class="searchbar">
-                <form>
-                    <input type="text" placeholder="Recherche..">
-                    <button><i class="fa fa-search"></i></button>
-                </form>
-                
+            <div class="block2">
+                <a href="logout">
+                    <img src="frontend/assets/img/logout.png" alt="logout" class="logout">
+                </a>
             </div>
         </nav>
     </header>
     <main>
-        <h1 style="color: white;">Bienvenue,  <?php 
-        if (!empty($_SESSION['Customer'])) {
-            echo $_SESSION['Customer'];
-        } else {
-            echo "erreur";
-        }
-        ?> !
-        </h1>
         <div class="site">
+        <h1>Bienvenue,  <?php 
+        if (!empty($_SESSION['Customer'])) {
+            echo $_SESSION['Customer'] . '!';
+        } else {
+            echo "veuillez vous connecter SVP!!";
+        }
+        ?>
+        </h1>
+
+        <h1><?php 
+        if (empty($_SESSION['Customer'])) {
+            echo "Un abonnement est obligatoire pour pouvoir avoir accès à la suite du site...";
+        }
+        ?>
+        </h1>
             <div class="categorie-action">
                 <h2>Action</h2>
                 <div id="slider-action"></div>

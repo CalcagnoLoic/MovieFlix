@@ -10,6 +10,7 @@ use app\controller\Welcome;
 use app\controller\Error;
 use app\controller\HomePage;
 use app\controller\LoginController;
+use app\controller\Logout;
 use app\controller\PricesPlan;
 use app\controller\RegisterController;
 
@@ -37,6 +38,11 @@ switch ($url) {
     case '/MovieFlix/prices':
         $prices = new PricesPlan();
         $prices->pricesPlan();
+        break;
+
+    case '/MovieFlix/logout': 
+        $logout = new Logout();
+        $logout->logout();
         break;
 
     default:

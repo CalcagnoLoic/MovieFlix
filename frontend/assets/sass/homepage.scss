@@ -15,8 +15,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
         .block1 {
             display: flex;
             align-items: center;
@@ -25,36 +25,29 @@ body {
                 font-family: JacquesFrançoisShadow;
                 font-size: 45px;
             }
-            .menu {
-                width: 48px;
-                height: 48px;
-            }
             .img-responsive {
                 display: none;
             }
         }
-        .searchbar {
-            display: flex;
-            align-items: center;
-            input {
-                border: none;
-                font-size: 17px;
-                padding: 6px;
-            }
-            button {
-                cursor: pointer;
-                padding: 6px 10px;
-                border: none;
-                background: #ddd;
-                font-size: 17px;
+        .block2 {
+            .logout {
+                width: 48px;
+                height: 48px;
+                border: 1px solid white;
+                margin-right: 10px;
+                border-radius: 15px;
+                margin-left: 15px;
                 &:hover {
-                    background-color: #ccc;
+                    cursor: pointer;
                 }
             }
         }
     }
     main {
         .site {
+            h1 {
+                color: white;
+            }
             padding: 15px;
             margin: 15px;
             .categorie-action, .categorie-drame, .categorie-aventure, .categorie-horreur, .categorie-fantastique, .categorie-comedie, .categorie-policier, .categorie-docu, .categorie-mystere, .categorie-scifi, .categorie-thriller {
