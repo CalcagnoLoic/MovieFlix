@@ -16,8 +16,8 @@ body nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 body nav .block1 {
   display: flex;
@@ -28,7 +28,10 @@ body nav .block1 h1 {
   font-family: JacquesFrançoisShadow;
   font-size: 45px;
 }
-body nav .block1 .logout {
+body nav .block1 .img-responsive {
+  display: none;
+}
+body nav .block2 .logout {
   width: 48px;
   height: 48px;
   border: 1px solid white;
@@ -36,30 +39,8 @@ body nav .block1 .logout {
   border-radius: 15px;
   margin-left: 15px;
 }
-body nav .block1 .logout:hover {
+body nav .block2 .logout:hover {
   cursor: pointer;
-}
-body nav .block1 .img-responsive {
-  display: none;
-}
-body nav .searchbar {
-  display: flex;
-  align-items: center;
-}
-body nav .searchbar input {
-  border: none;
-  font-size: 17px;
-  padding: 6px;
-}
-body nav .searchbar button {
-  cursor: pointer;
-  padding: 6px 10px;
-  border: none;
-  background: #ddd;
-  font-size: 17px;
-}
-body nav .searchbar button:hover {
-  background-color: #ccc;
 }
 body main .site {
   padding: 15px;

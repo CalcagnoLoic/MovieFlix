@@ -19,18 +19,14 @@ session_start();
     <header>
         <nav>
             <div class="block1">
-                <a href="logout">
-                    <img src="frontend/assets/img/logout.png" alt="logout" class="logout">
-                </a>
+                
                 <h1>MovieFlix</h1>
                 <img src="frontend/assets/img/logo.png" alt="Logo responsive" class="img-responsive">
             </div>
-            <div class="searchbar">
-                <form>
-                    <input type="text" placeholder="Recherche..">
-                    <button><i class="fa fa-search"></i></button>
-                </form>
-                
+            <div class="block2">
+                <a href="logout">
+                    <img src="frontend/assets/img/logout.png" alt="logout" class="logout">
+                </a>
             </div>
         </nav>
     </header>
