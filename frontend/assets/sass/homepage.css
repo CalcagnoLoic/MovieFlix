@@ -28,9 +28,16 @@ body nav .block1 h1 {
   font-family: JacquesFrançoisShadow;
   font-size: 45px;
 }
-body nav .block1 .menu {
+body nav .block1 .logout {
   width: 48px;
   height: 48px;
+  border: 1px solid white;
+  margin-right: 10px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+body nav .block1 .logout:hover {
+  cursor: pointer;
 }
 body nav .block1 .img-responsive {
   display: none;
@@ -57,6 +64,9 @@ body nav .searchbar button:hover {
 body main .site {
   padding: 15px;
   margin: 15px;
+}
+body main .site h1 {
+  color: white;
 }
 body main .site .categorie-action, body main .site .categorie-drame, body main .site .categorie-aventure, body main .site .categorie-horreur, body main .site .categorie-fantastique, body main .site .categorie-comedie, body main .site .categorie-policier, body main .site .categorie-docu, body main .site .categorie-mystere, body main .site .categorie-scifi, body main .site .categorie-thriller {
   overflow: hidden;
