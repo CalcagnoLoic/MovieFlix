@@ -75,6 +75,12 @@ body main .site .mainpage .container .title-slider {
   font-style: italic;
   font-weight: bold;
 }
+body main .site .mainpage .container #slider .photo {
+  border-radius: 25px;
+}
+body main .site .mainpage .container .chevron {
+  padding-top: 2%;
+}
 body main .site .mainpage .container .chevron .btn {
   width: 5%;
 }

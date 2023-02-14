@@ -83,7 +83,13 @@ body {
                         font-style: italic;
                         font-weight: bold;
                     }
+                    #slider {
+                        .photo {
+                            border-radius: 25px;
+                        }
+                    }
                     .chevron {
+                        padding-top: 2%;
                         .btn {
                             width: 5%;
                             &:hover {
