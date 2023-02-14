@@ -16,7 +16,7 @@
         <h2>404 - Page non trouvée</h2>
         <p>La page que vous essayez de consulter à peut être été supprimée, déplacée ou temporairement indisponible. Réessayez plus tard!</p>
         <div class="btn">
-            <button onclick="location.href='http://localhost/MovieFlix/'">Retour à l'acceuil > </button>
+            <button onclick="location.href='http://localhost/MovieFlix/homepage'">Retour à l'accueil > </button>
         </div>
     </main>
 </body>

@@ -15,7 +15,7 @@
         <div class="container">
             <h1>MovieFlix</h1>
             <h2>S'enregistrer</h2>
-            <form method="post" action="">
+            <form method="post" action="" id="form">
                 <div class="form1">
                     <select required name="prices">
                         <option value="">--Veuillez choisir une option--</option>
@@ -64,6 +64,6 @@
         $footer->view('template/footer');
     ?>
 
-    <script src="frontend/assets/js/matchingInput.js"></script>
+    <!--<script src="frontend/assets/js/matchingInput.js"></script>-->
 </body>
 </html>
