@@ -1,0 +1,23 @@
+footer {
+  background-color: rgba(250, 55, 29, 0.95);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .ft-img {
+  width: 8%;
+}
+
+@media (max-width: 600px) {
+  body footer {
+    font-size: 15px;
+  }
+  body footer .ft-img {
+    width: 20%;
+  }
+}/*# sourceMappingURL=footer.css.map */

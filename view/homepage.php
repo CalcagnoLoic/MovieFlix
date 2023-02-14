@@ -11,38 +11,33 @@ session_start();
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>MovieFlix</title>
+    <link rel="stylesheet" href="frontend/assets/sass/header.css">
     <link rel="stylesheet" href="frontend/assets/sass/homepage.css">
+    <link rel="stylesheet" href="frontend/assets/sass/footer.css">
     <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="block1">
-                <h1>MovieFlix</h1>
-                <img src="frontend/assets/img/logo.png" alt="Logo responsive" class="img-responsive">
-            </div>
-            <div class="block2">
-                <a href="logout">
-                    <img src="frontend/assets/img/logout.png" alt="logout" class="logout">
-                </a>
-            </div>
-        </nav>
-    </header>
+    <?php
+    use app\controller\Controller;
+    
+    $header = new Controller;
+    $header->view('template/header');
+    ?>
     <main>
         <div class="site">
             <?php
             if (!empty($_SESSION['Customer'])) {
                 echo "
                 <div>
-                    <ul>
-                        <li>Liste des genres pour les films</li>
-                        <li>Recherche d'un film par son nom</li>
+                    <ul class='home-bar'>
+                        <li><a href='homepage'>Accueil</a></li>
+                        <li><a href='error'>Contactez-nous</a></li>
                     </ul>
                 </div>";
             }
             ?>
 
-            <h1>Bienvenue, <?php 
+            <h1>Bienvenue sur MovieFlix, <?php 
             if (!empty($_SESSION['Customer'])) {
                 echo $_SESSION['Customer'] . '!';
             } else {
@@ -54,29 +49,44 @@ session_start();
             <?php 
             if (empty($_SESSION['Customer'])) {
                 echo "<h2>Un abonnement est obligatoire pour pouvoir avoir accès à la suite du site...</h2>";
-                echo "<img src='frontend/assets/img/oops.gif' class='connect'/>";
+                echo "<img src='frontend/assets/img/error.png' class='connect'/>";
             } else {
                 echo "
-                <div class='container'>
-                    <div id='slider'></div>
-                    <div class='chevron'>
-                        <img src='frontend/assets/img/chevron-gauche.png' alt='chevron gauche' id='g-chevron' class='btn'>
-                        <img src='frontend/assets/img/chevron-droit.png' alt='chevron droit' id='d-chevron' class='btn'>
+                <div class='mainpage'>
+                    <div class='genre'>
+                        <ul>
+                            <li>Liste des genres disponibles:</li>
+                            <li><a href='action'>Action</a></li>
+                            <li><a href='aventure'>Aventure</a></li>
+                            <li><a href='comedie'>Comédie</a></li>
+                            <li><a href='policier'>Policier</a></li>
+                            <li><a href='documentaire'>Documentaire</a></li>
+                            <li><a href='drame'>Drame</a></li>
+                            <li><a href='fantastique'>Fantastique</a></li>
+                            <li><a href='horreur'>Horreur</a></li>
+                            <li><a href='mystere'>Mystère</a></li>
+                            <li><a href='scifi'>Science-Fiction</a></li>
+                            <li><a href='thriller'>Thriller</a></li>
+                        </ul>
                     </div>
+
+                    <div class='container'>
+                        <p class='title-slider'>Les films du moment :</p>
+                        <div id='slider'></div>
+                        <div class='chevron'>
+                            <img src='frontend/assets/img/chevron-gauche.png' alt='chevron gauche' id='g-chevron' class='btn'>
+                            <img src='frontend/assets/img/chevron-droit.png' alt='chevron droit' id='d-chevron' class='btn'>
+                        </div>
                     </div>
                 </div>";
             }
             ?>
-        </div>
     </main>
     <?php
-
-    use app\controller\Controller;
-
     $footer = new Controller;
     $footer->view('template/footer');
-
     ?>
+
     <script src="frontend/assets/js/apiKey.js"></script>
     <script src="frontend/assets/js/carrouselHomepage.js"></script>
 </body>
