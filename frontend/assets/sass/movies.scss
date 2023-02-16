@@ -39,7 +39,6 @@ body {
                         width: 60%;
                         display: block;
                         margin: 0 auto;
-                        
                     }
                     ul {
                         li {
@@ -114,6 +113,35 @@ body {
                             }
                         }
                         
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        main {
+            .site {
+                .mainpage {
+                    flex-direction: column;
+                    .sidebar {
+                        order: 0;
+                        .icon-movie {
+                            width: 10%;
+                        }
+                        ul {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                    }    
+                    .movies {
+                        padding-left: 10%;
+                        order: 1;
+                        .movie-container {
+                            padding-left: 20%;
+                        }
                     }
                 }
             }

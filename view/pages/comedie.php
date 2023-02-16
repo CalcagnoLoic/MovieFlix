@@ -11,9 +11,9 @@ session_start();
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Comédie</title>
-    <link rel="stylesheet" href="frontend/assets/sass/header.css">
+    <link rel="stylesheet" href="frontend/assets/css/header.css">
     <link rel="stylesheet" href="frontend/assets/sass/movies.css">
-    <link rel="stylesheet" href="frontend/assets/sass/footer.css">
+    <link rel="stylesheet" href="frontend/assets/css/footer.css">
     <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>

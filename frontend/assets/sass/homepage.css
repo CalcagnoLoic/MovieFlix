@@ -25,21 +25,20 @@ body main .site .connect {
 body main .site h2 {
   padding-bottom: 2%;
 }
+body main .site h1, body main .site h2 {
+  text-align: center;
+  color: white;
+}
 body main .site .mainpage {
   display: flex;
 }
 body main .site .mainpage h1, body main .site .mainpage h2 {
   color: white;
 }
-body main .site .mainpage .genre {
-  width: 25%;
-}
 body main .site .mainpage .genre .icon-movie {
-  width: 90%;
+  width: 60%;
   display: block;
   margin: 0 auto;
-  position: relative;
-  left: 25px;
 }
 body main .site .mainpage .genre ul li {
   list-style-type: none;
@@ -94,6 +93,7 @@ body main .site .mainpage .container .chevron {
   justify-content: center;
   align-items: center;
   padding-top: 2%;
+  margin-bottom: 25px;
 }
 body main .site .mainpage .container .chevron .btn:hover {
   cursor: pointer;
@@ -144,12 +144,7 @@ body main .site .mainpage .container .chevron .btn:hover {
     flex-direction: column;
   }
   body main .mainpage .genre {
-    display: flex;
-    flex-direction: column;
     order: 1;
-  }
-  body main .mainpage .genre .icon-movie {
-    visibility: hidden;
   }
   body main .mainpage .genre ul {
     display: grid;
@@ -165,6 +160,7 @@ body main .site .mainpage .container .chevron .btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
   }
   body main .mainpage .container .chevron .btn {
     width: 15%;
@@ -177,13 +173,9 @@ body main .site .mainpage .container .chevron .btn:hover {
   body main .mainpage .genre {
     order: 1;
   }
-  body main .mainpage .genre .icon-movie {
-    visibility: hidden;
-  }
   body main .mainpage .genre ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 50%;
   }
   body main .mainpage .genre ul li {
     text-align: center;
@@ -197,6 +189,7 @@ body main .site .mainpage .container .chevron .btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
   }
   body main .mainpage .container .chevron .btn {
     width: 15%;

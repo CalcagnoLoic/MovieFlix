@@ -106,4 +106,27 @@ body main .site .mainpage .movies .movie-container .container-cards .btn-info:ho
   transition: 1s;
   box-shadow: 7px 7px 0 rgb(87, 9, 3);
   font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body main .site .mainpage {
+    flex-direction: column;
+  }
+  body main .site .mainpage .sidebar {
+    order: 0;
+  }
+  body main .site .mainpage .sidebar .icon-movie {
+    width: 10%;
+  }
+  body main .site .mainpage .sidebar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body main .site .mainpage .movies {
+    padding-left: 10%;
+    order: 1;
+  }
+  body main .site .mainpage .movies .movie-container {
+    padding-left: 20%;
+  }
 }/*# sourceMappingURL=movies.css.map */

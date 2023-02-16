@@ -7,7 +7,7 @@
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Connexion à MovieFlix</title>
-    <link rel="stylesheet" href="frontend/assets/sass/login.css">
+    <link rel="stylesheet" href="frontend/assets/css/login.css">
     <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>
