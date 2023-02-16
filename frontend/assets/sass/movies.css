@@ -7,6 +7,10 @@
   font-family: JacquesFrançoisShadow;
   src: url(../fonts/Jacques_Francois_Shadow/JacquesFrancoisShadow-Regular.ttf);
 }
+header {
+  background-image: linear-gradient(black 60%, rgb(22, 22, 22));
+}
+
 body {
   background-color: rgb(22, 22, 22);
   margin: 0 auto;
@@ -24,4 +28,82 @@ body main .site h2 {
 body main .site h1, body main .site h2 {
   color: white;
   text-align: center;
+}
+body main .site .mainpage {
+  display: flex;
+}
+body main .site .mainpage .sidebar .icon-movie {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+body main .site .mainpage .sidebar ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+body main .site .mainpage .sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+body main .site .mainpage .sidebar ul li a:hover {
+  font-size: 20px;
+}
+body main .site .mainpage .movies {
+  padding-left: 10%;
+}
+body main .site .mainpage .movies h1 {
+  color: white;
+}
+body main .site .mainpage .movies .movie-container {
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .site .mainpage .movies .movie-container .container-cards {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+}
+body main .site .mainpage .movies .movie-container .container-cards .poster-movies {
+  display: flex;
+}
+body main .site .mainpage .movies .movie-container .container-cards .poster-movies:hover {
+  cursor: pointer;
+}
+body main .site .mainpage .movies .movie-container .container-cards .title-cards {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+body main .site .mainpage .movies .movie-container .container-cards .vote-cards {
+  font-size: 13px;
+}
+body main .site .mainpage .movies .movie-container .container-cards .vote-cards::after {
+  content: "/10";
+}
+body main .site .mainpage .movies .movie-container .container-cards .date-cards {
+  font-size: 13px;
+}
+body main .site .mainpage .movies .movie-container .container-cards .date-cards::before {
+  content: "Date de sortie: ";
+}
+body main .site .mainpage .movies .movie-container .container-cards .btn-info {
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  margin-bottom: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  transform: skewX(-15deg);
+  box-shadow: 6px 6px 0 black;
+  padding: 2px;
+}
+body main .site .mainpage .movies .movie-container .container-cards .btn-info:hover {
+  transition: 1s;
+  box-shadow: 7px 7px 0 rgb(87, 9, 3);
+  font-size: 14px;
 }/*# sourceMappingURL=movies.css.map */

@@ -6,6 +6,10 @@
     font-family: JacquesFrançoisShadow;
     src: url(../fonts/Jacques_Francois_Shadow/JacquesFrancoisShadow-Regular.ttf);
 }
+
+header {
+    background-image: linear-gradient(black 60%, rgb(22, 22, 22));
+}
 body {
     background-color: rgb(22, 22, 22);
     margin: 0 auto;
@@ -22,11 +26,96 @@ body {
             h2 {
                 padding-bottom: 2%;
             }
-
-            //Si connecté
             h1, h2 {
                 color: white;
                 text-align: center;
+            }
+
+            //Si connecté
+            .mainpage {
+                display: flex;
+                .sidebar {
+                    .icon-movie {
+                        width: 60%;
+                        display: block;
+                        margin: 0 auto;
+                        
+                    }
+                    ul {
+                        li {
+                            list-style-type: none;
+                            padding: 10px;
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                cursor: pointer;
+                                &:hover {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }    
+                .movies {
+                    padding-left: 10%;
+                    h1 {
+                        color: white;
+                    }
+                    .movie-container {
+                        padding: 5px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        .container-cards {
+                            display: inline-block;
+                            background-color: rgb(255, 255, 255);
+                            .poster-movies {
+                                display: flex;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                                
+                            }
+                            .title-cards {
+                                font-size: 13px;
+                                font-weight: bold;
+                                font-style: italic;
+                                text-align: center;
+                            }
+                            .vote-cards {
+                                font-size: 13px;
+                                &::after {
+                                    content: "/10";
+                                }
+                            }
+                            .date-cards {
+                                font-size: 13px;
+                                &::before {
+                                    content: "Date de sortie: "
+                                }
+                            }
+                            .btn-info {
+                                border: none;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                background-color: red;
+                                margin-bottom: 5px;
+                                color: white;
+                                cursor: pointer;
+                                transition: 1s;
+                                transform: skewX(-15deg);
+                                box-shadow: 6px 6px 0 black;
+                                padding: 2px;
+                                &:hover {
+                                    transition: 1s;
+                                    box-shadow: 7px 7px 0 rgb(87, 9, 3);
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
             }
         }
     }

@@ -29,8 +29,29 @@ session_start();
         <div class="site">
             <?php
             if (!empty($_SESSION['Customer'])) {
-                echo "
-                    <h1>Films d'action</h1>"
+                echo 
+                    "<div class='mainpage'>
+                        <div class='sidebar'>
+                            <img src='frontend/assets/img/movie.png' alt='movies' class='icon-movie'>
+                            <ul>
+                                <li><a href='action'>Action</a></li>
+                                <li><a href='aventure'>Aventure</a></li>
+                                <li><a href='comedie'>Comédie</a></li>
+                                <li><a href='policier'>Policier</a></li>
+                                <li><a href='documentaire'>Documentaire</a></li>
+                                <li><a href='drame'>Drame</a></li>
+                                <li><a href='fantastique'>Fantastique</a></li>
+                                <li><a href='horreur'>Horreur</a></li>
+                                <li><a href='mystere'>Mystère</a></li>
+                                <li><a href='scifi'>Science-Fiction</a></li>
+                                <li><a href='thriller'>Thriller</a></li>
+                            </ul>
+                        </div>
+                        <div class='movies'>
+                            <h1>Films d'action</h1>
+                            <div class='movie-container'></div>
+                        </div>
+                    </div>"
                 ;
             } else {
                 echo "<h1>Bienvenue sur MovieFlix, veuillez vous connecter SVP!!</h1>";
@@ -39,7 +60,6 @@ session_start();
             }
             ?>
         </div>
-    
     </main>
 
     <?php
@@ -48,5 +68,6 @@ session_start();
     ?>
     <script src="frontend/assets/js/apiKey.js"></script>
     <script src="frontend/assets/js/actionMovies.js"></script>
+    <script src="frontend/assets/js/displayCards.js"></script>
 </body>
 </html>

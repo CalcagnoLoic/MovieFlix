@@ -23,39 +23,20 @@ session_start();
     $header = new Controller;
     $header->view('template/header');
     ?>
+    
     <main>
         <div class="site">
             <?php
-            if (!empty($_SESSION['Customer'])) {
-                echo "
-                <div>
-                    <ul class='home-bar'>
-                        <li><a href='homepage'>Accueil</a></li>
-                        <li><a href='error'>Contactez-nous</a></li>
-                    </ul>
-                </div>";
-            }
-            ?>
-
-            <h1>Bienvenue sur MovieFlix, <?php 
-            if (!empty($_SESSION['Customer'])) {
-                echo $_SESSION['Customer'] . '!';
-            } else {
-                echo "veuillez vous connecter SVP!!";
-            }
-            ?>
-            </h1>
-
-            <?php 
             if (empty($_SESSION['Customer'])) {
+                echo "<h1>Bienvenue sur MovieFlix, veuillez vous connecter SVP!!</h1>";
                 echo "<h2>Un abonnement est obligatoire pour pouvoir avoir accès à la suite du site...</h2>";
                 echo "<img src='frontend/assets/img/error.png' class='connect'/>";
             } else {
                 echo "
                 <div class='mainpage'>
                     <div class='genre'>
+                        <img src='frontend/assets/img/movie.png' alt='movies' class='icon-movie'>
                         <ul>
-                            <li>Liste des genres disponibles:</li>
                             <li><a href='action'>Action</a></li>
                             <li><a href='aventure'>Aventure</a></li>
                             <li><a href='comedie'>Comédie</a></li>
@@ -71,6 +52,13 @@ session_start();
                     </div>
 
                     <div class='container'>
+                        <div>
+                            <ul class='home-bar'>
+                                <li><a href='homepage'>Accueil</a></li>
+                                <li><a href='error'>Contactez-nous</a></li>
+                            </ul>
+                        </div>
+                        <h1>Bienvenue sur MovieFlix, " . $_SESSION['Customer'] . "</h2>
                         <p class='title-slider'>Les films du moment :</p>
                         <div id='slider'></div>
                         <div class='chevron'>
@@ -82,6 +70,7 @@ session_start();
             }
             ?>
     </main>
+
     <?php
     $footer = new Controller;
     $footer->view('template/footer');
