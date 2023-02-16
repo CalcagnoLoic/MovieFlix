@@ -7,7 +7,7 @@
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Plans tarifaires</title>
-    <link rel="stylesheet" href="frontend/assets/sass/price.css">
+    <link rel="stylesheet" href="frontend/assets/css/price.css">
     <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>

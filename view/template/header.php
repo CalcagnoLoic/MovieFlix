@@ -2,7 +2,7 @@
     <nav>
         <div class="block1">
             <a href="homepage"><h1>MovieFlix</h1></a>
-            <img src="frontend/assets/img/logo.png" alt="Logo responsive" class="img-responsive">
+            <img src="frontend/assets/img/logo.png" alt="Logo responsive" class="img-responsive" onclick="location.href='http://localhost/MovieFlix/homepage'">
         </div>
         <div class="block2">
             <a href="logout">

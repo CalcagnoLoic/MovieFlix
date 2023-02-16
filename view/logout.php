@@ -13,7 +13,7 @@ session_destroy();
     <meta name="author" content="Calcagno Loïc">
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>A bientôt</title>
-    <link rel="stylesheet" href="frontend/assets/sass/logout.css">
+    <link rel="stylesheet" href="frontend/assets/css/logout.css">
     <link rel="icon" href="frontend/assets/img/logo.png">
 </head>
 <body>
