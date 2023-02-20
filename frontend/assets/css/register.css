@@ -72,6 +72,9 @@ body {
   font-size: 15px;
   margin-right: 15px;
 }
+.container form .form2 .input-control .honeypot {
+  display: none;
+}
 .container form .form2 .input-control .error {
   color: red;
   font-size: 12px;

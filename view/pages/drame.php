@@ -12,7 +12,7 @@ session_start();
     <meta name="description" content="Bienvenue sur MovieFlix, votre site de streaming regroupant les films sortis dans les salles de cinéma.">
     <title>Drame</title>
     <link rel="stylesheet" href="frontend/assets/css/header.css">
-    <link rel="stylesheet" href="frontend/assets/sass/movies.css">
+    <link rel="stylesheet" href="frontend/assets/css/movies.css">
     <link rel="stylesheet" href="frontend/assets/css/footer.css">
     <link rel="icon" href="frontend/assets/img/logo.png">
 </head>

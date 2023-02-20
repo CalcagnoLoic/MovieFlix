@@ -25,11 +25,11 @@ Le prototype de ce projet à été réalisé grâce à Figma, dont la planche se
 Le site se compose d'une page d'accueil sur laquelle, on peut se connecter ou s'inscrire.
 
 <p align="center">
-    <img src="frontend/assets/img/home.png" style="width:50%;">
+    <img src="frontend/assets/img/home.png" style="width:70%;">
 </p>
 
 L'accès au site en lui-même avec les informations contenues dans l'API sont uniquement accessibles avec des identifiants présents dans la base de données. 
-Voici les identifiants à utiliser pour pouvoir naviguer sur le site 👍
+Voici les identifiants à utiliser pour pouvoir naviguer sur le site :
 
 ```
 username : adminMovieFlix
@@ -42,20 +42,20 @@ password : 123456789
 Voici un exemple lorsque la session est ouverte et que l'utilisateur décide de visualiser les films d'actions :
 
 <p align="center">
-    <img src="frontend/assets/img/homepage.png" style="width:50%;">
-    <img src="frontend/assets/img/movie-details.png" style="width:50%;">
+    <img src="frontend/assets/img/homepage.png" style="width:70%;">
+    <img src="frontend/assets/img/movie-details.png" style="width:70%;">
 </p>
 
 Voici ce qu'un utilisateur non connecté verra : 
 
 <p align="center">
-    <img src="frontend/assets/img/non-connecte.png" style="width:50%;">
+    <img src="frontend/assets/img/non-connecte.png" style="width:70%;">
 </p>
 
 <h2>Charte graphique</h2>
 
 <p align="center">
-    <img src="frontend/assets/img/charte.png" style="width:50%;">
+    <img src="frontend/assets/img/charte.png" style="width:70%;">
 </p>
 
 <h2>Tâches réalisées</h2>
@@ -70,6 +70,6 @@ Voici ce qu'un utilisateur non connecté verra :
 
 - [x] Connectivité PHP/MySQL
 
-- [ ] Phase de testing
+- [x] Phase de testing
 
 - [ ] Tests unitaires

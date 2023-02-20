@@ -57,7 +57,7 @@ data_fetch_film()
 
             synopsis.onclick = () => {
                 if (synopsis_movie[i] === ""){
-                    alert("Synopsis à venir...")
+                    alert("Synopsis à venir...");
                 } else {
                     alert(synopsis_movie[i]);
                 }

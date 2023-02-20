@@ -11,7 +11,7 @@ class LoginController extends Controller
     public function loginform()
     {
         $connected = false;
-        if(!empty($_POST['email']) and !empty($_POST['password']) and !empty($_POST['username']))
+        if(!empty($_POST['email']) and !empty($_POST['password']) and !empty($_POST['username']) and empty($_POST['honeypot']))
         {
             $getUsers = new LoginModel();
             $users = $getUsers->validateLogin();
