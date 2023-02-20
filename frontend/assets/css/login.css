@@ -51,6 +51,9 @@ body {
   margin-bottom: 15px;
   font-size: 15px;
 }
+.container form .honeypot {
+  display: none;
+}
 .container form .btn {
   background-color: red;
   border: none;

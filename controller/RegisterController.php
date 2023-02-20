@@ -9,7 +9,7 @@ class RegisterController extends Controller
 {
     public function newUser() 
     {
-        if(!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['username']) && !empty($_POST['address']) && !empty($_POST['prices']) && !empty($_POST['password'])) 
+        if(!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['username']) && !empty($_POST['address']) && !empty($_POST['prices']) && !empty($_POST['password']) && empty($_POST['honeypot'])) 
         {
             $email = $_POST['email'];
             $name = $_POST['name'];

@@ -19,6 +19,7 @@
                 <input type="test" placeholder="Pseudo" required class="input" name='username'>
                 <input type="email" placeholder="Email" required class="input" name='email'>
                 <input type="password" placeholder="Mot de passe"  class="input" name="password">
+                <input type="text" name="honeypot" class="input honeypot">
                 <input type="submit" value="Se connecter" class="btn">
             </form>
             <div class="info">

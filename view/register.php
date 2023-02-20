@@ -30,6 +30,7 @@
                         <div class="error"></div>
                         <input type="text" placeholder="Nom et prénom" class="input" id="nom" required name="name">
                         <input type="text" placeholder="Pseudo" class="input" id="prenom" required name="username">
+                        <input type="text" name="honeypot" class="input honeypot">
                     </div>
                 </div>
                 <div class="form3">
